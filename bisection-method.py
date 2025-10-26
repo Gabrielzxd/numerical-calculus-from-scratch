@@ -16,7 +16,7 @@ def bisection_method_recursive(function, a, b, error):
         return bisection_method_recursive(function, x, b, error)
     
     else:
-        return x
+        return -999999999
 
 # Similar to binary search
 def bisection_method_iterative(function, a, b, error):
