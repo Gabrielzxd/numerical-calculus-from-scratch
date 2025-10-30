@@ -4,8 +4,9 @@ def function(x):
 
 # Implementation using recursion
 def bisection_method_recursive(function, a, b, error):
-    if (function(a) * function(b) >= 0):
+    if function(a) * function(b) >= 0:
         return -999999999
+    
     x = (a + b) / 2
 
     if abs(function(x)) < error:
